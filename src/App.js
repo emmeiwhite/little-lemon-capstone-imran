@@ -1,7 +1,14 @@
 import './App.css'
 
 function App() {
-  return <h1>Getting started with Capstone project</h1>
+  return (
+    <>
+      <header> Header </header>
+      <nav>Navigation</nav>
+      <main>Main</main>
+      <footer>Footer</footer>
+    </>
+  )
 }
 
 export default App
