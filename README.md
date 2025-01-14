@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Little Lemon Meta Capstone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project in Action
 
-## Available Scripts
+[Little Lemon Restaurant](https://little-lemon-restaurant-project.netlify.app)
 
-In the project directory, you can run:
+## Figma Links
 
-### `npm start`
+[Little Lemon Figma Files Part 1](https://www.figma.com/design/7KAWJM6WPTTt24EmuqkkAT/reserve-a-table-little-lemon-restaurant-1?node-id=1-142&t=lCg4CkjeUtG9pRjw-1)
+[Little Lemon Figma Files Part 2](https://www.figma.com/design/BevmmVR9c4TKDUPMIWdpqC/reserve-table-little-lemon-restaurant-part-2?node-id=0-1&t=UQ8ppVOpDw7LGyGV-1)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This demo project has been designed and developed for the Capstone Project course of the front-end developer program offered by Meta. This project is based on a scenario involving a fictional restaurant called Little Lemon.
+Little Lemon has faced difficulties with the reserve-a-table feature on its website. The feature doesn’t exist in the navigation bar and there is no specific button on its homepage to highlight this option. This project involves 3 main features:
 
-### `npm test`
+1. Landing page
+2. Reservation page
+3. Navigation bar
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tools & Technologies
 
-### `npm run build`
+For the design and development of this project, these tools and technologies were used:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Figma (for designing wireframes and prototypes)
+- Git & GitHub
+- HTML
+- CSS
+- JavaScript
+- React.js (Create-React-App Boilerplate)
+- React Router
+- React Testing Library
+- Jest
+- React Icons
+- nanoid (Third-Party-Package)
+- Browser APIs such as fetch and localStorage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation & Run
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- To install all dependencies you should run the `npm install` command in your terminal.
 
-### `npm run eject`
+- To run this app, you should run the `npm run` command in your terminal.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Testing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To test the unit tests that are written run the `npm test` command.
+Tests have been written for the reservation form functionality. It's located in `src/components/BookingForm.test.js`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Notes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- No CSS library or framework has been used. Literally, everything is styled from scratch.
 
-## Learn More
+- For state management, I used `Context API`. No external libraries such as `Redux Toolkit` have been used.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_This is just a demo project for educational purposes. And it's going to be used for the assessment of the capstone project course offered by Meta. In addition, it's going to be presented as one of my portfolio projects that demonstrates my front-end development skills to potential employers._

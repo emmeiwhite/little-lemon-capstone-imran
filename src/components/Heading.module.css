@@ -1,0 +1,18 @@
+.heading {
+  font-size: 4rem;
+  font-family: 'Markazi Text', serif;
+  color: var(--dark-primary-color);
+  text-transform: capitalize;
+}
+
+.heading[data-heading-type='aboutUs'],
+.heading[data-heading-type='testimonials'] {
+  text-align: center;
+}
+
+@media screen and (min-width: 75em) {
+  .heading[data-heading-type='aboutUs'] {
+    padding: 1.5rem 2.5rem;
+    text-align: left;
+  }
+}
