@@ -2,7 +2,7 @@
 
 ## Project in Action
 
-[Little Lemon Restaurant](https://little-lemon-restaurant-project.netlify.app)
+[Little Lemon Restaurant](https://little-lemon-capstone-imran.netlify.app/)
 
 ## Figma Links
 
