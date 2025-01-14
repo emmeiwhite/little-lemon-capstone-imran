@@ -1,0 +1,58 @@
+.reservationForm {
+  width: 90vw;
+  margin: 5rem auto;
+  font-family: 'Karla', sans-serif;
+  font-size: 2.5rem;
+  display: grid;
+  justify-items: center;
+  row-gap: 4rem;
+}
+
+.reservationFormTitle {
+  font-family: 'Markazi Text', serif;
+  font-size: 4rem;
+}
+
+.formInputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 30rem;
+}
+
+.formInputGroup input,
+.formInputGroup select {
+  font-family: 'Karla', sans-serif;
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.submitBtn {
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 2rem 3rem;
+  color: var(--first-dark-gray);
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  margin-top: 2rem;
+}
+.submitBtn:hover,
+.submitBtn:active {
+  color: var(--first-light-gray);
+  background-color: var(--dark-secondary-color);
+}
+
+@media screen and (min-width: 37.5em) {
+  .formInputGroup {
+    width: 40rem;
+  }
+}
