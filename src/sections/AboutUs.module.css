@@ -1,0 +1,106 @@
+/* 
+  ABOUT US
+*/
+
+.aboutUsContainer {
+  display: grid;
+}
+
+.aboutUsTextContainer {
+  margin: 3rem 0;
+}
+
+.aboutUsSubheading {
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Markazi Text', serif;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--second-dark-gray);
+}
+
+.aboutUsText {
+  padding: 1.5rem 2.5rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--first-dark-gray);
+}
+
+.aboutUsImagesContainer {
+  position: relative;
+  height: 40rem;
+}
+
+.aboutUsAdrianImage,
+.aboutUsMarioImage {
+  width: 40%;
+  max-width: 20rem;
+  position: absolute;
+  border-radius: 1rem;
+}
+
+.aboutUsAdrianImage {
+  top: 0;
+  right: 45%;
+}
+
+.aboutUsMarioImage {
+  bottom: 0;
+  left: 50%;
+}
+
+/* 75em = 1200px */
+@media screen and (min-width: 75em) {
+  .aboutUsContainer {
+    grid-template-columns: auto 1fr;
+    column-gap: 3rem;
+    align-items: center;
+  }
+
+  .aboutUsSubheading {
+    text-align: left;
+    padding: 0 2.5rem;
+  }
+
+  .aboutUsImagesContainer {
+    width: 50vw;
+    max-width: 50rem;
+    height: 60rem;
+  }
+
+  .aboutUsAdrianImage,
+  .aboutUsMarioImage {
+    width: 50%;
+    max-width: 30rem;
+  }
+
+  .aboutUsAdrianImage {
+    top: 15%;
+    right: 50%;
+  }
+
+  .aboutUsMarioImage {
+    bottom: 10%;
+    left: 40%;
+  }
+}
+
+/* 100em = 1600px */
+@media screen and (min-width: 100em) {
+  .aboutUsImagesContainer {
+    max-width: 70rem;
+  }
+
+  .aboutUsAdrianImage,
+  .aboutUsMarioImage {
+    max-width: 40rem;
+  }
+  .aboutUsAdrianImage {
+    top: 0;
+  }
+
+  .aboutUsMarioImage {
+    bottom: 0;
+  }
+}

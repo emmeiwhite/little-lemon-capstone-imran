@@ -1,0 +1,113 @@
+/*
+******************
+   FOOTER
+******************
+*/
+
+.footer {
+  padding: 4rem 2rem;
+  margin-top: 3rem;
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 2rem;
+  font-family: 'Karla', sans-serif;
+  color: var(--first-light-gray);
+  background-color: var(--primary-color);
+}
+
+.footerLogo {
+  max-width: 10rem;
+  filter: brightness(0) invert(1);
+}
+
+.footerTitleSection {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.footerNavListContainer,
+.footerContactListContainer,
+.footerSocialNetworkListContainer {
+  list-style: none;
+}
+
+.footerListItem:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.footerNavLink:link,
+.footerNavLink:visited {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerSocialNetworkListContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footerSocialNetworkLink:link,
+.footerSocialNetworkLink:visited {
+  color: var(--first-light-gray);
+  font-size: 3rem;
+  transition: color 0.2s ease;
+}
+
+.footerSocialNetworkLink:hover,
+.footerSocialNetworkLink:active,
+.footerNavLink:hover,
+.footerNavLink:active {
+  color: var(--light-secondary-color);
+}
+
+.footerCopyrightContainer {
+  font-size: 1.6rem;
+  grid-column: 1 / -1;
+}
+
+.footerCopyrightContainer p:first-child {
+  margin-bottom: 1rem;
+}
+
+/* 
+  Media Queries
+*/
+
+/* 56.25em = 900px */
+@media screen and (min-width: 56.25em) {
+  .footerSocialNetworkContainer {
+    /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+    grid-area: 1 / 3 / 2 / 4;
+  }
+}
+
+/* 81em = 1296px */
+@media screen and (min-width: 81em) {
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    padding-left: 6rem;
+  }
+
+  .footerCopyrightContainer {
+    text-align: center;
+  }
+}
+
+/* 100em = 1600px */
+@media screen and (min-width: 100em) {
+  .footer {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    column-gap: 0;
+    font-size: 2.5rem;
+  }
+
+  .footerSocialNetworkLink:link,
+  .footerSocialNetworkLink:visited {
+    font-size: 4rem;
+  }
+}

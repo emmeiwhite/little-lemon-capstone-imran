@@ -1,0 +1,184 @@
+/*
+******************
+   TESTIMONIALS
+******************
+*/
+
+.carouselContainer {
+  color: var(--first-dark-gray);
+  margin: 5rem 0;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.carousel {
+  width: 80vw;
+  display: flex;
+  height: 40rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  position: relative;
+  align-items: center;
+  border-radius: 1.5rem;
+}
+
+.slide {
+  /* Essential for carousel functionality */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Slide Style */
+  font-family: 'Karla', sans-serif;
+  background-color: var(--light-quaternary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.avatarContainer {
+  margin-top: 2rem;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 10rem;
+  border-radius: 50%;
+}
+
+.reviewerName {
+  font-size: 3rem;
+}
+
+.starIcon {
+  color: var(--secondary-color);
+  font-size: 2rem;
+}
+.starIcon:not(:last-child) {
+  margin-right: 0.7rem;
+}
+
+.review {
+  width: 90%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.quoteIcon {
+  font-size: 2.5rem;
+  color: var(--secondary-color);
+}
+
+.btnChevronLeft,
+.btnChevronRight {
+  position: absolute;
+  font-size: 4rem;
+  color: var(--dark-primary-color);
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btnChevronLeft {
+  top: 50%;
+  left: 1%;
+}
+
+.btnChevronRight {
+  top: 50%;
+  right: 1%;
+}
+
+/*
+  Media Queries
+*/
+
+/* 37.5em = 600px */
+@media screen and (min-width: 37.5em) {
+  .avatar {
+    max-width: 15rem;
+  }
+
+  .review {
+    margin-bottom: 0;
+  }
+
+  .btnChevronLeft {
+    left: 3%;
+  }
+
+  .btnChevronRight {
+    right: 3%;
+  }
+}
+
+/* 56.25em = 900px */
+@media screen and (min-width: 56.25em) {
+  .avatar {
+    max-width: 15rem;
+  }
+
+  .starIcon {
+    font-size: 2.5rem;
+  }
+
+  .review {
+    margin-bottom: 3rem;
+  }
+
+  .quoteIcon {
+    font-size: 3rem;
+  }
+
+  .btnChevronLeft {
+    left: 4%;
+  }
+
+  .btnChevronRight {
+    right: 4%;
+  }
+}
+
+/* 100em = 1600px */
+@media screen and (min-width: 100em) {
+  .carouselContainer {
+    padding: 4rem 0;
+  }
+
+  .carousel {
+    margin: 4rem auto;
+    height: 50rem;
+  }
+
+  .avatarContainer {
+    width: 100%;
+  }
+
+  .avatar {
+    display: block;
+    margin: 0 auto;
+    max-width: 20rem;
+  }
+
+  .reviewerName {
+    font-size: 3.6rem;
+  }
+
+  .starIcon {
+    font-size: 2.5rem;
+  }
+
+  .review {
+    font-size: 3rem;
+  }
+
+  .quoteIcon {
+    font-size: 3.2rem;
+  }
+}

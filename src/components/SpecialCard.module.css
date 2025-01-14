@@ -1,0 +1,129 @@
+/* 
+**************************
+  SPECIAL CARD
+**************************
+*/
+
+.card {
+  width: 90%;
+  height: 55.55rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-family: 'Karla', sans-serif;
+  color: var(--third-dark-gray);
+  background-color: var(--third-light-gray);
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.cardImgContainer {
+  width: 100%;
+  height: 25rem;
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardHeaderContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardHeaderTitle {
+  font-family: 'Markazi Text', serif;
+  font-size: 3.2rem;
+}
+
+.cardHeaderPrice {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--tertiary-color);
+}
+
+.cardBodyContainer {
+  width: 80%;
+  height: 10rem;
+  max-height: 15rem;
+}
+
+.cardBodyDescription {
+  font-size: 2rem;
+}
+
+.cardOrderContainer {
+  margin-top: 5rem;
+}
+
+/*
+  Media Queries
+*/
+
+/* 37.5em = 600px */
+@media screen and (min-width: 37.5em) {
+  .card {
+    height: 60rem;
+  }
+
+  .cardImgContainer {
+    height: 30rem;
+  }
+
+  .cardBodyDescription {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+}
+
+/* 56.25em = 900px */
+@media screen and (min-width: 56.25em) {
+  .cardOrderContainer {
+    margin-top: 3rem;
+  }
+}
+
+/* 79.5em = 1272px */
+@media screen and (min-width: 79.5em) {
+  .card {
+    height: 70rem;
+  }
+
+  .cardImgContainer {
+    height: 30rem;
+  }
+
+  .cardBodyContainer {
+    height: 20rem;
+    max-height: 20rem;
+  }
+
+  .cardOrderContainer {
+    margin-top: 5rem;
+  }
+}
+
+/* 100em = 1600px */
+@media screen and (min-width: 100em) {
+  .cardHeaderTitle {
+    font-size: 3.6rem;
+  }
+
+  .cardHeaderPrice {
+    font-size: 3rem;
+  }
+
+  .cardBodyDescription {
+    font-size: 2.5rem;
+  }
+
+  .cardOrderContainer {
+    margin-top: 4rem;
+  }
+}

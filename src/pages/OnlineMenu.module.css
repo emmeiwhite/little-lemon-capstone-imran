@@ -1,0 +1,54 @@
+.constructionContainer {
+  width: 90vw;
+  margin: 5rem auto;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.6rem;
+}
+
+.constructionImg {
+  max-width: 25rem;
+}
+
+.constructionContainer p {
+  margin-top: 5rem;
+  line-height: 1.5;
+}
+
+.linkToHome:link,
+.linkToHome:visited {
+  color: var(--tertiary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.linkToHome:hover,
+.linkToHome:active {
+  color: var(--dark-tertiary-color);
+}
+
+/* 80em = 1280px */
+@media screen and (min-width: 80em) {
+  .constructionContainer {
+    font-size: 2.5rem;
+  }
+
+  .constructionImg {
+    max-width: 45rem;
+  }
+}
+
+/* 100em = 1600px */
+@media screen and (min-width: 100em) {
+  .constructionContainer {
+    font-size: 3rem;
+  }
+
+  .constructionContainer p {
+    margin-top: 8rem;
+  }
+
+  .constructionImg {
+    max-width: 70rem;
+  }
+}
